@@ -92,14 +92,14 @@ body {
     padding: 5px;
 }
 
-#chat-message-input {
+#chat-message-input, #room-name-input {
     border: 2px solid #808080;
     border-radius: 4px;
     width: 80%;
     padding: 5px;
 }
 
-#chat-message-submit {
+#chat-message-submit, #room-name-submit {
     border: 2px solid #808080;
     border-radius: 4px;
     margin-left: 5px;
@@ -108,7 +108,7 @@ body {
     width: 10%;
 }
 
-#chat-message-submit:hover {
+#chat-message-submit:hover, #room-name-submit:hover {
     color: #7777ac;
     text-decoration: underline;
 }
@@ -120,3 +120,9 @@ body {
 }
 
 /**-Choose Room-------------------------------------------*/
+
+.instruction-message {
+    color: white;
+    padding: 5px;
+    padding-left: 0;
+}
