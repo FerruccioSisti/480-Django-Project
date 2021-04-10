@@ -5,13 +5,16 @@
 <head>
     <meta charset="utf-8"/>
     <title>Chat Room</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'index.css' %}">
 </head>
 <body>
     <div id="wrapper">
         <div id="room">
             <p class="welcome-message">Welcome!</p>
-            <p id="room-selection-button"><a class="menu-button"  href="index.html">Choose Another Room</a></p>
+            {% load static %}
+            <p id="room-selection-button"><a class="menu-button"  href="#">Choose Another Room</a></p>
             <p id="exit"><a class="menu-button"  href="#">Logout</a></p>
         </div>
 
