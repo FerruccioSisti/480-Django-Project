@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-weight: 350;
+    margin: 50px auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 60%;
+    height: 85%;
+}
+
+
+/**-MENU-------------------------------------------*/
+
+#room {
+    display: flex;
+    padding: 20px;
+}
+
+#room p.welcome-message {
+    flex: 1;
+}
+
+.menu-button {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.menu-button:hover {
+    color: #7777ac;
+    text-decoration: underline;
+}
+
+#room #exit {
+    color: white;
+    background-color: rgb(206, 103, 103);
+    padding: 4px 6px;
+    border: 2px solid #808080;
+    border-radius: 4px;
+}
+
+#room #room-selection-button {
+    color: white;
+    background-color: rgb(103, 206, 189);
+    padding: 4px 6px;
+    border: 2px solid #808080;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+
+.welcome-message {
+    color: white;
+    font-size: x-large;
+}
+
+#wrapper {
+    margin: 0 auto;
+    background-color: #b1b1b9;
+    border: 2px solid #808080;
+    border-radius: 4px;
+}
+
+/**-Chat Room Area-------------------------------------------*/
+
+#chat-room {
+    padding-left: 25px;   
+}
+
+#chat-room textarea {
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    padding: 10px;
+    height: 80%;
+    width: 80%;
+    resize: none;
+
+    border: 2px solid #808080;
+    border-radius: 4px;
+}
+
+#chat-log {
+    flex: 1;
+    border-bottom: 4px solid #a7a7a7;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+#chat-message-input {
+    border: 2px solid #808080;
+    border-radius: 4px;
+    width: 80%;
+    padding: 5px;
+}
+
+#chat-message-submit {
+    border: 2px solid #808080;
+    border-radius: 4px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    width: 10%;
+}
+
+#chat-message-submit:hover {
+    color: #7777ac;
+    text-decoration: underline;
+}
+
+#message {
+    display: flex;
+    padding-left: 25px;
+    padding-bottom: 15px;
+}
+
+/**-Choose Room-------------------------------------------*/

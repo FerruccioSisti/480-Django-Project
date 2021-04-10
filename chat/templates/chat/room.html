@@ -4,12 +4,28 @@
 <head>
     <meta charset="utf-8"/>
     <title>Chat Room</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <textarea id="chat-log" cols="100" rows="20"></textarea><br>
-    <input id="chat-message-input" type="text" size="100"><br>
-    <input id="chat-message-submit" type="button" value="Send">
-    {{ room_name|json_script:"room-name" }}
+    <div id="wrapper">
+        <div id="room">
+            <p class="welcome-message">Welcome!</p>
+            <p id="room-selection-button"><a class="menu-button"  href="#">Choose Another Room</a></p>
+            <p id="exit"><a class="menu-button"  href="#">Logout</a></p>
+        </div>
+
+        <div id= chat-room>
+            <textarea id="chat-log" cols="100" rows="20" readonly></textarea><br>
+        </div>
+    
+        <div id="message">
+            <input id="chat-message-input" type="text" size="100"><br>
+            <input id="chat-message-submit" type="button" value="Send">
+            {{ room_name|json_script:"room-name" }}
+        </div>
+    </div>
+
+    
     <script>
         const roomName = JSON.parse(document.getElementById('room-name').textContent);
 
