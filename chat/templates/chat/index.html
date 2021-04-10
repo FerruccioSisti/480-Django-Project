@@ -1,10 +1,11 @@
 <!-- chat/templates/chat/index.html -->
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8"/>
     <title>Chat Rooms</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
 
 </head>
 <body>
@@ -12,11 +13,12 @@
     <div id="wrapper">
         <div id="room">
             <p class="welcome-message">Welcome!</p>
+            <p id="exit"><a class="menu-button"  href="#">Logout</a></p>
         </div>
     
-        <div id="message">
+        <div id="room-message">
             <p class="instruction-message">Enter room number: </p>
-            <input id="room-name-input" type="text" size="100"><br>
+            <input id="room-name-input" type="text" size="100">
             <input id="room-name-submit" type="button" value="Enter">
         </div>
     </div>

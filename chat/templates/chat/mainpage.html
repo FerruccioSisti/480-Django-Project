@@ -1,0 +1,89 @@
+<!-- chat/templates/chat/index.html -->
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Chat Rooms</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+<body>
+
+    <div id="wrapper">
+        <div id="room">
+            <p class="welcome-message">Welcome!</p>
+        </div>
+        
+        <div id="main-menu">
+            <div id="nav-bar">
+                <p class="nav-title">Sign Up</p>
+                <p>Email:</p>
+                <input class="information" id="signup-user" type="text" size="100" value="Email">
+                <p>Name:</p>
+                <input class="information" id="signup-name" type="text" size="100" value="Name">
+                <p>Password:</p>
+                <input class="information" id="signup-password" type="text" size="100" value="Password">
+                <p>Re-enter Password: </p>
+                <input class="information" id="signup-password-again" type="text" size="100" value="Re-enter Password">
+                <input id="signup-button" type="button" value="Sign Up"> 
+                
+                <p class="nav-title" id="login-title">Login</p>
+                <p>Email</p>
+                <input class="information" id="login-user" type="text" size="100" value="Email">
+                <p>Password</p>
+                <input class="information" id="login-password" type="text" size="100" value="Password">
+                <input id="login-button" type="button" value="Login"> 
+            </div>
+            <div id="info-section">
+                
+                <p class="subtitle">About This Chat Application</p>
+                <p class="info">&nbsp;&nbsp;&nbsp;&nbsp;A chat application, also known as an
+                    instant messaging system, is a tool that allows
+                    many individuals to communicate with each
+                    other almost simultaneously. In the modern
+                    world, communication is often made between a
+                    client and a server. A client will usually connect
+                    to a server and start to communicate based on
+                    addresses. Thus, when using a distributed
+                    system, it requires more tools and framework
+                    to work efficiently and effectively.</p>
+
+                <p class="subtitle">What is a Distributed Server?</p>
+                <p class="info">&nbsp;&nbsp;&nbsp;&nbsp;In computer science, a distributed
+                    system is a form of computing that utilizes
+                    multiple components on different machines. It
+                    does this in such a way as to be able to
+                    coordinate calculations to appear on one end-
+                    user’s system. A distributed system generally
+                    has two system functions where either each
+                    machine works towards a common goal or
+                    each machine has its own end-user with
+                    shared resources and communication services.
+                    All components run along with each other and
+                    there is no global clock among each
+                    component. In saying this, most distributed
+                    systems can remain obscure. However, they
+                    do have their benefits as there is easy
+                    horizontal scalability, reliability, and
+                    performance increases.</p>
+                
+                <p class="subtitle">Paper Information</p>
+                <p class="info">The paper can be found <a href="https://drive.google.com/file/d/192RlwfiJfwIWNzcJ9-uvhcogE-tegmf0/view?usp=sharing">here</a></p>
+            
+                <p class="subtitle">About Us</p>
+                <p class="info">Our group consists of Arshdeep Sidhu, Ferruccio Sisti and Andrea Bonato. 
+                    We are all in our final years in Computer Science and all on the Computer Science Society. 
+                    The following are our emails:
+                    <ul class="info">
+                        <li class="info">Arshdeep: sidhu1b@uwindsor.ca</li>
+                        <li class="info">Ferruccio: sisti@uwindsor.ca</li>
+                        <li class="info">Andrea: bonato11@uwindsor.ca</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

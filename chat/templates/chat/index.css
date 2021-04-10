@@ -92,14 +92,14 @@ body {
     padding: 5px;
 }
 
-#chat-message-input, #room-name-input {
+#chat-message-input{
     border: 2px solid #808080;
     border-radius: 4px;
     width: 80%;
     padding: 5px;
 }
 
-#chat-message-submit, #room-name-submit {
+#chat-message-submit{
     border: 2px solid #808080;
     border-radius: 4px;
     margin-left: 5px;
@@ -108,7 +108,7 @@ body {
     width: 10%;
 }
 
-#chat-message-submit:hover, #room-name-submit:hover {
+#chat-message-submit:hover, #room-name-submit:hover, #signup-button:hover, #login-button:hover  {
     color: #7777ac;
     text-decoration: underline;
 }
@@ -122,7 +122,84 @@ body {
 /**-Choose Room-------------------------------------------*/
 
 .instruction-message {
-    color: white;
+    color: black;
     padding: 5px;
     padding-left: 0;
+    padding-right: 10px;
+}
+#room-name-input {
+    border: 2px solid #808080;
+    border-radius: 4px;
+    width: 20%;
+    padding: 5px;
+    margin-right: 10px;
+}
+#room-name-submit {
+    border: 2px solid #808080;
+    border-radius: 4px;
+    width: 10%;
+}
+#room-message {
+    display: flex;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 4px;
+    border: 2px solid #FFFFFF;
+    background-color: #c9c9cf;
+}
+
+/**-Main Menu-------------------------------------------*/
+#info-section {
+    width: 70%;
+    margin-left: 10px;
+    border-left: 2px solid #808080;
+    background-color: #FFFFFF;
+}
+#main-menu {
+    display: flex;
+    border-top: 2px solid #808080;
+    background-color: #c9c9cf;
+}
+#info-section .subtitle{
+    font-size: larger;
+    margin: 10px;
+}
+#info-section .info {
+    font-size: small;
+    margin:10px;
+}
+
+/**-Login/SignUp Bar-------------------------------------------*/
+#nav-bar {
+    height: 100%;
+    width: 30%;
+    padding: 5px;
+    font-size: small;
+}
+#nav-bar p{
+    padding-top: 5px;
+}
+.nav-title {
+    font-size: large;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+}
+#login-title {
+    border-top: 2px solid #808080;
+}
+#nav-bar .information {
+    width: 80%;
+    padding: 10px;
+    margin-top: 5x;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    border: 2px solid #808080;
+}
+
+#signup-button, #login-button {
+    padding: 5px;
+    border-radius: 4px;
+    border: 2px solid #808080;
+    width: 40%;
 }
