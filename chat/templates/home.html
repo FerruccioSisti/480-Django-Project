@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Home</h2>
+<p>Welcome, {% if user.is_authenticated %}{{ user.username }}
+    {% else %}guest{% endif %}
+</p>
+{% if user.is_authenticated %}
+<p>Get <a href="{% url 'index' %}">Chatting</a> Now!</p>
+{% else %}
+<p>Log in or sign up to begin chatting!</p>
+{% endif %}
+<p>
+    <strong>Current Active Users: </strong> {{ count }}
+</p>
+<h4>About This Application</h4>
+<p>
+    A chat application, also known as an instant messaging system,
+    is a tool that allows many individuals to communicate with each other almost simultaneously.
+    In the modern world, communication is often made between a client and a server. A client will usually connect to a
+    server and start to communicate based on addresses. Thus, when using a distributed system, it requires more
+    tools and framework to work efficiently and effectively.
+</p>
+<h4>What is a Distributed Server?</h4>
+<p>
+    In computer science, a distributed system is a form of computing that utilizes multiple components
+    on different machines. It does this in such a way as to be able to coordinate calculations to appear on one end-
+    user’s system.
+    A distributed system generally has two system functions where either each machine works towards a common goal
+    or each machine has its own end-user with shared resources and communication services. All components run along
+    with each other and there is no global clock among each component. In saying this, most distributed systems can
+    remain obscure. However, they do have their benefits as there is easy horizontal scalability, reliability, and
+    performance increases.
+</p>
+
+<h4>Paper Information</h4>
+<p>
+    The paper can be found <a
+        href="https://drive.google.com/file/d/192RlwfiJfwIWNzcJ9-uvhcogE-tegmf0/view?usp=sharing">here</a>
+</p>
+
+<h4>About Us</h4>
+<p>
+    Our group consists of Andrea Bonato, Arshdeep Sidhu and Ferruccio Sisti. We are all in our final
+    years in Computer Science and all on the Computer Science Society. The following are our emails:
+<ul>
+    <li>Andrea: bonato11@uwindsor.ca</li>
+    <li>Arshdeep: sidhu1b@uwindsor.ca</li>
+    <li>Ferruccio: sisti@uwindsor.ca</li>
+</ul>
+</p>
+{% endblock %}
